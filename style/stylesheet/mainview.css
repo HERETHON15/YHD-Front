@@ -50,5 +50,7 @@ body {
 .floating-button{
   position: fixed;
   bottom:5px;
-  left: 50px;
+  padding-left: 30px;
+  left: auto;
+  right: auto;
 }
