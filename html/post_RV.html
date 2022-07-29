@@ -1,1 +1,62 @@
-
+<!DOCTYPE html>
+<html lang="kr">
+	<head>
+		<title>여화도</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+		/>
+		<link href="/style/stylesheet/bar.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/style/stylesheet/post.css" />
+		<script src="/javascript/post.js"></script>
+	</head>
+	<body>
+		<!-- 상단 바 -->
+		<div class="bar">
+			<input
+				class="arrow"
+				type="button"
+				onclick="location.href='/html/mainview.html'"
+			/>
+			<span>리뷰쓰기</span>
+		</div>
+		<!-- 별점 -->
+		<div class="StarRating">
+			<span>별점</span>
+			<div class="star">
+				⦁⦁⦁⦁⦁
+				<span>⦁⦁⦁⦁⦁</span>
+				<input
+					type="range"
+					oninput="drawStar(this)"
+					value="1"
+					step="2"
+					min="0"
+					max="10"
+				/>
+			</div>
+		</div>
+		<!-- 후기 작성 -->
+		<div class="writeRv">
+			<span>후기를 남겨주세요</span>
+			<input
+				type="text"
+				maxlength="500"
+				placeholder="리뷰를 작성해주세요(최대 500자)"
+			/>
+		</div>
+		<div class="ImageUpload">
+			<span>사진을 올려주세요</span>
+			<span>(선택)</span>
+			<img src="/style/img/ImageUpload.svg" alt="ImageUpload" />
+		</div>
+		<input
+			class="ImgBtn"
+			id="PbtnSubmit"
+			type="button"
+			onclick="location.href='mainview.html'"
+		/>
+	</body>
+</html>

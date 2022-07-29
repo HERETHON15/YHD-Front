@@ -1,43 +1,73 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="kr">
 	<head>
-		<title></title>
+		<title>여화도</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link href="index.css" rel="stylesheet" />
-		<script src="../javascript/index.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+		<link href="/style/stylesheet/bar.css" rel="stylesheet" />
+		<link href="/style/stylesheet/post.css" rel="stylesheet"/>
 	</head>
 	<body>
-		<!-- 별점 -->
-		<div class="waterdrop">
-			<div><img class="star" src="/img/FullStar.svg" alt="fullstar" /></div>
+		<!-- 상단 바 -->
+		<div class="bar">
 			<input
-				type="range"
-				oninput="drawStar(this)"
-				value="1"
-				step="1"
-				min="0"
-				max="5"
+				class="arrow"
+				type="button"
+				onclick="location.href='/html/mainview.html'"
 			/>
+			<span>화장실 등록</span>
 		</div>
+		<!-- 주소검색 -->
+		<div class="SearchAdress">
+			<span>장소, 주소 검색</span>
+		</div>
+		<!-- 별점 -->
+		<div class="StarRating">
+			<span>별점</span>
+			<div class="star">
+				⦁⦁⦁⦁⦁
+				<span>⦁⦁⦁⦁⦁</span>
+				<input
+					type="range"
+					oninput="drawStar(this)"
+					value="1"
+					step="2"
+					min="0"
+					max="10"/>
+			</div>
+	
 		<div class="Tagline1">
-			<img src="/style/img/T1.svg" alt="tag1" />
-			<img src="/img/T2.svg" alt="tag2" />
+      <div class="Tag1">휴지 X</div>
+      <div class="Tag1">휴지 O</div>
 		</div>
 		<div class="Tagline2">
-			<img src="/img/T3.svg" alt="tag3" />
-			<img src="/img/T4.svg" alt="tag4" />
-			<img src="/img/T5.svg" alt="tag5" />
+			<div class="Tag2">깨끗하지 않아요</div>
+			<div class="Tag2">그럭저럭 깨끗</div>
+			<div class="Tag2">깨끗해요</div>
 		</div>
 		<div class="Tagline3">
-			<img src="/img/T6.svg" alt="tag6" />
-			<img src="/img/T7.svg" alt="tag7" />
+			<div class="Tag3">남녀공용 X</div>
+      <div class="Tag3">남녀공용 O</div>
 		</div>
-		<div class="Tagline4">
-			<img src="/img/T8.svg" alt="tag8" />
-			<img src="/img/T9.svg" alt="tag9" />
+      <div class="Tagline4">
+      <div class="Tag4">생리대자판기 X</div>
+      <div class="Tag4">생리대자판기 O</div>
 		</div>
+
 		<!-- 후기 작성 -->
-		<input type="text" maxlength="500" />
-	</body>
+		<div class="writeRv">
+		<span>후기를 남겨주세요</span>
+		<input type="text" maxlength="500" placeholder="리뷰를 작성해주세요(최대 500자)"/>
+		</div>
+		<div class="ImageUpload">
+		<span>사진을 올려주세요</span>
+		<span>(선택)</span>
+		<img src="/style/img/ImageUpload.svg" alt="ImageUpload">
+		</div>
+		<input class="ImgBtn" id="PbtnSubmit" type="button" onclick="location.href='mainview.html'"/>
+
+<script src="/html/post.js"></script>
+
+</body>
 </html>
