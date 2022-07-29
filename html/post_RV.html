@@ -5,27 +5,28 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link
+			href="https://webfontworld.github.io/ChosunGs/ChosunGs.css"
+			rel="stylesheet"
+		/>
+		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
 		/>
 		<link href="/style/stylesheet/bar.css" rel="stylesheet" />
 		<link rel="stylesheet" href="/style/stylesheet/post.css" />
-		<script src="/javascript/post.js"></script>
+		<script src="/html/post.js"></script>
 	</head>
 	<body>
 		<!-- 상단 바 -->
-		<div class="bar">
-			<input
-				class="arrow"
-				type="button"
-				onclick="location.href='/html/mainview.html'"
-			/>
-			<span>리뷰쓰기</span>
+			<img src="/style/img/2.svg" width="390px" />
 		</div>
+
 		<!-- 별점 -->
 		<div class="StarRating">
-			<span>별점</span>
-			<div class="star">
+			<img src="/style/img/별점.svg" style="margin:10px;">
+
+			<div class="star"
+			style="font-size:40pt;">
 				⦁⦁⦁⦁⦁
 				<span>⦁⦁⦁⦁⦁</span>
 				<input
@@ -38,25 +39,27 @@
 				/>
 			</div>
 		</div>
+		<hr style="width:90%">
+
+
+		<img src="/style/img/tag.svg" style="margin: 30px;" />
+		<hr style="width:90%">
 		<!-- 후기 작성 -->
 		<div class="writeRv">
-			<span>후기를 남겨주세요</span>
+
+			<img src="/style/img/4.svg" style="margin-left:30px; margin-top: 30px; box-sizing: border-box;">
 			<input
 				type="text"
 				maxlength="500"
 				placeholder="리뷰를 작성해주세요(최대 500자)"
+				style="display: block; margin: 30px; width: 300px; height: 150px; margin-bottom: 0px;"
 			/>
 		</div>
 		<div class="ImageUpload">
-			<span>사진을 올려주세요</span>
-			<span>(선택)</span>
-			<img src="/style/img/ImageUpload.svg" alt="ImageUpload" />
+			<img src="/style/img/3.svg" alt="" style="margin-left: 30px; margin-top: 30px;">
+
+			<img src="/style/img/ImageUpload.svg" alt="ImageUpload" style="display: block; width: 50px; margin-left: 30px;" />
 		</div>
-		<input
-			class="ImgBtn"
-			id="PbtnSubmit"
-			type="button"
-			onclick="location.href='mainview.html'"
-		/>
+		<img src="/style/img/PbtnSubmit.svg" style="margin-left: 30px; margin-top: 10px;"
 	</body>
 </html>

@@ -3,6 +3,7 @@
 	position: relative;
 	font-size: 2rem;
 	color: #ddd;
+	margin-left: 70px;
 }
 
 .star input {
@@ -12,6 +13,7 @@
 	left: 0;
 	opacity: 0;
 	cursor: pointer;
+	/* margin-left: 80px; */
 }
 
 .star span {
@@ -21,6 +23,7 @@
 	color: #ccecf0;
 	overflow: hidden;
 	pointer-events: none;
+	/* margin-left: 80px; */
 }
 
 .Tag1 {
