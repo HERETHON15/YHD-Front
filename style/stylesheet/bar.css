@@ -1,0 +1,12 @@
+
+
+.arrow {
+	background: url('/style/img/Arrow.svg') no-repeat;
+	width: 27px;
+	height: 27px;
+	border: none;
+}
+
+.bar {
+	background-color: #ccecf0;
+}
