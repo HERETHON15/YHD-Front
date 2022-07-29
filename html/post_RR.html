@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="index.css" rel="stylesheet" />
+		<script src="../javascript/index.js"></script>
+	</head>
+	<body>
+		<!-- 별점 -->
+		<div class="waterdrop">
+			<div><img class="star" src="/img/FullStar.svg" alt="fullstar" /></div>
+			<input
+				type="range"
+				oninput="drawStar(this)"
+				value="1"
+				step="1"
+				min="0"
+				max="5"
+			/>
+		</div>
+		<div class="Tagline1">
+			<img src="/img/T1.svg" alt="tag1" />
+			<img src="/img/T2.svg" alt="tag2" />
+		</div>
+		<div class="Tagline2">
+			<img src="/img/T3.svg" alt="tag3" />
+			<img src="/img/T4.svg" alt="tag4" />
+			<img src="/img/T5.svg" alt="tag5" />
+		</div>
+		<div class="Tagline3">
+			<img src="/img/T6.svg" alt="tag6" />
+			<img src="/img/T7.svg" alt="tag7" />
+		</div>
+		<div class="Tagline4">
+			<img src="/img/T8.svg" alt="tag8" />
+			<img src="/img/T9.svg" alt="tag9" />
+		</div>
+		<!-- 후기 작성 -->
+		<input type="text" maxlength="500" />
+	</body>
+</html>
