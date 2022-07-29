@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	overflow: hidden;
+	width: 100%;
+	max-width: 390px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.search {
+    position: relative;
+    width: 90%;
+    margin:20px;
+  }
+  
+  input {
+    width: 90%;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    padding-left: 35px;
+    font-size: 14px;
+  }
+  
+#search-img {
+    position : absolute;
+    width: 17px;
+    top: 10px;
+    left: 30px;
+    margin: 0;
+  }
+
+
+.flex_container{
+    padding: 10%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: space-between;
+}
+
+.element{
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.floating-button{
+  position: fixed;
+  bottom:5px;
+  padding-left: 30px;
+  left: auto;
+  right: auto;
+}
