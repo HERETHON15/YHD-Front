@@ -82,3 +82,12 @@ body {
     text-align: left;
     clear:both;
 }
+
+
+.floating-button{
+    position: fixed;
+    bottom:5px;
+    padding-left: 30px;
+    left: auto;
+    right: auto;
+  }
