@@ -46,9 +46,6 @@ body {
 
 /* 태그 버튼 */
 
-.Tagline1 {
-}
-
 .clicked {
 	filter: grayscale();
 }
